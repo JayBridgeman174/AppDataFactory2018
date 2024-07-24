@@ -1,0 +1,61 @@
+{
+	"name": "AzureSQLDatabase1_service",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_LinkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Correlation id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Operation name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Event category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Level",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Subscription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Event initiated by",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Resource type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Resource group",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Resource",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "LogTest"
+		}
+	}
+}
